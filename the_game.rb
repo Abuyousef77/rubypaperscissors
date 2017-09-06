@@ -3,15 +3,15 @@ require './lib/plays.rb'
 
 # Creates a game object
 purple_monkey = Game.new()
+purple_monkey.gameLoop()
 
-puts "Pick a move P1: 'ruby', 'paper', 'scissors'"
-player1 = gets.chomp
+# blue_banana = Game.new()
+# blue_banana.gameLoop()
 
-puts "Pick a move P2: 'ruby', 'paper', 'scissors'"
-player2 = gets.chomp
+# puts "Final Scores for Purple Monkey Game:"
+# puts "#{purple_monkey.p1_score}"
+# puts "#{purple_monkey.p2_score}"
 
-if purple_monkey.wins?(player1,player2)
-  puts "Player 1 Wins! :D"
-else
-  puts "Player 2 Wins! :D"
-end
+# puts "Final Scores for Blue Banana Game:"
+# puts "#{blue_banana.p1_score}"
+# puts "#{blue_banana.p2_score}"
